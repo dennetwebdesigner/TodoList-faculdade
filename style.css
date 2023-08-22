@@ -1,0 +1,103 @@
+/* html - hyper text markup language - hiper marcação de texto - não é linguagem de programação - linguagem de marcação ou esqueletização
+CSS - Cascade style sheet */
+/* 
+id - identifiicador
+class - class
+
+class x id - diferença é que class server pra identificar um unico elemento ou um grupo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#organizador-de-tarefas {
+  width: 20%;
+  height: 75%;
+  box-shadow: 1px 1px 9px #555;
+  background-color: #fff;
+  position: relative;
+  min-width: 260px;
+}
+
+h1 {
+  margin: 15px 5px;
+}
+
+footer {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+footer #add-compra {
+  width: 85%;
+  height: 100%;
+  padding: 2px;
+  transition: 2s;
+}
+
+footer #add {
+  width: 15%;
+  height: 100%;
+  background-color: greenyellow;
+  cursor: pointer;
+  transition: 2s;
+}
+
+footer .cancelar {
+  width: 15%;
+  height: 100%;
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#lista {
+  width: 100%;
+  height: 85%;
+  padding: 6px;
+  overflow-y: auto;
+}
+
+.tarefa {
+  border: 1px solid black;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.acao button {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.acao button:first-child {
+  background-color: yellow;
+  color: black;
+}
